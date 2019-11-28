@@ -95,11 +95,6 @@
     ExtAudioFileDispose(_finalAudioFile);
     _finalAudioFile = NULL;
     NSLog(@"finish write");
-    NSURL *path = _filePath;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSData *data = [NSData dataWithContentsOfURL:path];
-        NSLog(@"file data size %lu",(unsigned long)data.length);
-    });
 }
 
 

@@ -7,22 +7,22 @@ Pod::Spec.new do |s|
   s.author   = { 'xionggithub' => '...' }
   s.source   = { :git => 'https://github.com/xionggithub/SMEasyAudioEngine.git', :tag => "#{s.version}" }
   
-  s.source_files = './*.{h,m}'
+  s.source_files = 'SMEasyAudioEngine/**/*.{h,m}'
   s.ios.deployment_target = '7.0'
   s.xcconfig = {     
-    'USER_HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/SMEasyAudioEngine'
+    'USER_HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/SMEasyAudioEngine/SMEasyAudioEngine'
   }
   # s.subspec 'Core' do |Core|
-  #     Core.source_files  = './Core/*.{h,m,c,cpp,hpp}'
-  #     Core.private_header_files = './Core/*.{h,hpp}'
-  #     Core.subspec 'SMCircleBuffer' do |SMCircleBuffer|
-  #       SMCircleBuffer.source_files  = './Core/SMCircleBuffer/*.{h,m,c,cpp,hpp}'
-  #       SMCircleBuffer.private_header_files = './Core/SMCircleBuffer/*.{h,hpp}'
-  #     end
-  #     Core.subspec 'SMEasyAudioSession' do |SMEasyAudioSession|
-  #       SMEasyAudioSession.source_files  = './Core/SMEasyAudioSession/*.{h,m,c,cpp,hpp}'
-  #       SMEasyAudioSession.private_header_files = './Core/SMEasyAudioSession/*.{h,hpp}'
-  #     end
+  #   Core.source_files  = 'SMEasyAudioEngine/Core/*.{h,m,c,cpp,hpp}'
+  #   Core.private_header_files = 'SMEasyAudioEngine/Core/*.{h,hpp}'
+  #   Core.subspec 'SMCircleBuffer' do |SMCircleBuffer|
+  #     SMCircleBuffer.source_files  = 'SMEasyAudioEngine/Core/SMCircleBuffer/*.{h,m,c,cpp,hpp}'
+  #     SMCircleBuffer.private_header_files = 'SMEasyAudioEngine/Core/SMCircleBuffer/*.{h,hpp}'
+  #   end
+  #   Core.subspec 'SMEasyAudioSession' do |SMEasyAudioSession|
+  #     SMEasyAudioSession.source_files  = 'SMEasyAudioEngine/Core/SMEasyAudioSession/*.{h,m,c,cpp,hpp}'
+  #     SMEasyAudioSession.private_header_files = 'SMEasyAudioEngine/Core/SMEasyAudioSession/*.{h,hpp}'
+  #   end
   # end
 
   s.ios.exclude_files = 'framework/Source/Mac'

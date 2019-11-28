@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author   = { 'xionggithub' => '...' }
   s.source   = { :git => 'https://github.com/xionggithub/SMEasyAudioEngine.git', :tag => "#{s.version}" }
   
-  s.source_files = 'SMEasyAudioEngine/**/*.{h,m}'
+  s.source_files = 'SMEasyAudioEngine/**/*.{h,hpp,c,cpp,m,mm}'
   s.ios.deployment_target = '7.0'
   s.xcconfig = {     
     'USER_HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/SMEasyAudioEngine/SMEasyAudioEngine'

@@ -9,7 +9,9 @@ Pod::Spec.new do |s|
   
   s.source_files = './*.{h,m}'
   s.ios.deployment_target = '7.0'
-  
+  s.xcconfig = {     
+    'USER_HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_ROOT}/SMEasyAudioEngine'
+  }
   s.subspec 'Core' do |Core|
       Core.source_files  = './Core/*.{h,m,c,cpp,hpp}'
       Core.private_header_files = './Core/*.{h,hpp}'

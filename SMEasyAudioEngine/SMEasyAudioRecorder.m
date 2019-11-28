@@ -11,6 +11,8 @@
 #import "SMEasyAudioIONode.h"
 #import "SMEasyAudioRecordNode.h"
 #import "SMEasyAudioSession.h"
+#import "SMEasyAudioMixerNode.h"
+#import "AVAudioSession+RouteUtils.h"
 
 @implementation SMEasyAudioRecorder
 {

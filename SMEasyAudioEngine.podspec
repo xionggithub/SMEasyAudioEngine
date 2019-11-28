@@ -11,15 +11,15 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
   
   s.subspec 'Core' do |Core|
-      Core.source_files  = 'Core/*.{h,m,c,cpp,hpp}'
-      Core.private_header_files = 'Core/*.{h,hpp}'
+      Core.source_files  = './Core/*.{h,m,c,cpp,hpp}'
+      Core.private_header_files = './Core/*.{h,hpp}'
       Core.subspec 'SMCircleBuffer' do |SMCircleBuffer|
-        SMCircleBuffer.source_files  = 'Core/SMCircleBuffer/*.{h,m,c,cpp,hpp}'
-        SMCircleBuffer.private_header_files = 'Core/SMCircleBuffer/*.{h,hpp}'
+        SMCircleBuffer.source_files  = './Core/SMCircleBuffer/*.{h,m,c,cpp,hpp}'
+        SMCircleBuffer.private_header_files = './Core/SMCircleBuffer/*.{h,hpp}'
       end
       Core.subspec 'SMEasyAudioSession' do |SMEasyAudioSession|
-        SMEasyAudioSession.source_files  = 'Core/SMEasyAudioSession/*.{h,m,c,cpp,hpp}'
-        SMEasyAudioSession.private_header_files = 'Core/SMEasyAudioSession/*.{h,hpp}'
+        SMEasyAudioSession.source_files  = './Core/SMEasyAudioSession/*.{h,m,c,cpp,hpp}'
+        SMEasyAudioSession.private_header_files = './Core/SMEasyAudioSession/*.{h,hpp}'
       end
   end
 

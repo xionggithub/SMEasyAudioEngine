@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
   }
 
   s.subspec 'Core' do |c|
-    c.source_files  = 'SMEasyAudioEngine/Core/**/*.{h,m,c,cpp,hpp}'
-    c.private_header_files = 'SMEasyAudioEngine/Core/**/*.{h,hpp}'
+    c.source_files  = 'SMEasyAudioEngine/Core/*.{h,m,c,cpp,hpp}'
+    c.private_header_files = 'SMEasyAudioEngine/Core/*.{h,hpp}'
     c.subspec 'SMCircleBuffer' do |smcb|
       smcb.source_files  = 'SMEasyAudioEngine/Core/SMCircleBuffer/**/*.{h,m,c,cpp,hpp}'
       smcb.private_header_files = 'SMEasyAudioEngine/Core/SMCircleBuffer/**/*.{h,hpp}'

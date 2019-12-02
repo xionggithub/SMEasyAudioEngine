@@ -30,7 +30,8 @@
         SMEasyAudioIONode *ioNode = [[SMEasyAudioIONode alloc]init];
         _IONode = ioNode;
         
-        SMEasyAudioRecordNode *recordNode = [[SMEasyAudioRecordNode alloc] initWithRecordFilePath:url];
+        SMEasyAudioRecordNode *recordNode = [[SMEasyAudioRecordNode alloc] init];
+        [recordNode createNewRecordFileAtPath:url];
         _recordNode = recordNode;
 
         SMEasyAudioMixerNode *mixer = [[SMEasyAudioMixerNode alloc]initWithMixerElementCount:1];

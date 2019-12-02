@@ -11,7 +11,6 @@
 @interface SMEasyAudioRecordNode : SMEasyAudioNode
 @property (nonatomic, copy, readonly) NSURL *filePath;
 @property (nonatomic, assign) BOOL asyncWrite;
-
-- (instancetype)initWithRecordFilePath:(NSURL *)path;
+- (void)createNewRecordFileAtPath:(NSURL *)path;
 - (void)finish;
 @end

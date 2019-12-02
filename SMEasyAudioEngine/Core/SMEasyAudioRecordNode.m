@@ -15,12 +15,13 @@
 @implementation SMEasyAudioRecordNode
 {
     ExtAudioFileRef _finalAudioFile;
+    BOOL _finishResetAudioUnit;
 }
 @synthesize filePath = _filePath;
 - (NSURL *)filePath{
     return _filePath;
 }
-- (instancetype)initWithRecordFilePath:(NSURL *)path{
+- (instancetype)init{
     self = [super init];
     if (self) {
         AudioComponentDescription description;
@@ -29,14 +30,23 @@
         description.componentType = kAudioUnitType_FormatConverter;
         description.componentSubType = kAudioUnitSubType_AUConverter;
         self.acdescription = description;
-        _filePath = path;
         self.nodeCustomProcessCallBack = &recordAudioCallback;
         self.asyncWrite = YES;
+        _finishResetAudioUnit = NO;
     }
     return self;
 }
 
-
+-(void)createNewRecordFileAtPath:(NSURL *)path{
+    if (_filePath || _finalAudioFile) {
+        [self finish];
+        _filePath = nil;
+    }
+    _filePath = path;
+    if (_finishResetAudioUnit) {
+        [self prepareFinalWriteFile];
+    }
+}
 
 - (void)resetAudioUnit{
     [super resetAudioUnit];
@@ -46,6 +56,7 @@
     AudioUnitSetProperty(self.audioUnit, kAudioUnitProperty_StreamFormat, kAudioUnitScope_Input, outputElement, &outputElementInputStreamFormat, sizeof(outputElementInputStreamFormat));
     AudioUnitSetProperty(self.audioUnit, kAudioUnitProperty_StreamFormat, kAudioUnitScope_Output, outputElement, &outputElementOutputStreamFormat, sizeof(outputElementOutputStreamFormat));
     
+    _finishResetAudioUnit = YES;
     [self prepareFinalWriteFile];
 }
 - (void)prepareForRender{
@@ -92,8 +103,10 @@
     CheckStatus(ExtAudioFileWriteAsync(_finalAudioFile, 0, NULL),@"ExtAudioFileWriteAsync Failed", YES);
 }
 - (void)finish{
-    ExtAudioFileDispose(_finalAudioFile);
-    _finalAudioFile = NULL;
+    if (_finalAudioFile) {
+        ExtAudioFileDispose(_finalAudioFile);
+        _finalAudioFile = NULL;
+    }
     NSLog(@"finish write");
 }
 

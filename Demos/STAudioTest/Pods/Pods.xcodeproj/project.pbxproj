@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01CC7DAAEE4547112A7C03F61B5156C5 /* AEWeakRetainingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 536011063F14F97F2A3F1B4DA9B97DBB /* AEWeakRetainingProxy.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		080D7BEE99B412BDB02DB889DD59541C /* AELowPassModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF51333035E95ABEBBDBAE8D0EFF579 /* AELowPassModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		143933ED9E137AB88DF4040C633749F7 /* AETypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EC57897BE0BAC65171132220CBB011A /* AETypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		158A47E82A547A32DD737A8343F81390 /* AEMainThreadEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFD914527DFBED93B93CE072478047B /* AEMainThreadEndpoint.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		15DEFCB3B3053EC65DDF59F110ECB8EA /* AERenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = CFB6E30C527D7C994BCD274CCA45D55A /* AERenderer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		16A806A72EAAC7902C9D86DBBF8CC482 /* AEAudioUnitOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = A90F312644DE6863C6AC154917A5B513 /* AEAudioUnitOutput.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		195E7C23B98D7FDA5B00387355091B99 /* AEArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D46CB40149AD153080F26E609C691CF /* AEArray.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1C2D8138D50FAB0E6D5C770BE922D6BD /* AEModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 35FCAD9A267FE57AA5AFEFFF9007E899 /* AEModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C90F2644F6B0D025D4D522CDE494C6C /* TPCircularBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = B92DA7AC8DF07EAE575F03C8B4CC1EFE /* TPCircularBuffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		20970A60280DBA09BA5DAE3CAD6BF929 /* AESplitterModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 51BA85F9D915C29A4991863FFC02BEEB /* AESplitterModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		244085EEB10E7B25799E2D2B64CF4578 /* AEAudioUnitOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D4867D179A3DCC1F5BC345BCD77BF77 /* AEAudioUnitOutput.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24FE728EFB4799C9FCCACB7B79ADC78D /* AEVarispeedModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F6EF458E05E6392B6D4F422ED7F56C67 /* AEVarispeedModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28B6B9EBA435A81025B0F529CA3E4E94 /* AEDSPUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 206EEF30034B176B00642B67A81626BD /* AEDSPUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2A67A0F638F861992E639DFB86DCF387 /* AETime.m in Sources */ = {isa = PBXBuildFile; fileRef = A31A03F84F5AC2B8EF4DF026447B83E6 /* AETime.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2BAABA639FBF812ADFB0BF3659EFCC2B /* AEHighPassModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F87491490306BE3DB1A8F2B25497BD /* AEHighPassModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F8EDD32D3055F2FA36C36418BA0357E /* AEDelayModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 21928F7D9B04EA7BC15D69E6ECFD3137 /* AEDelayModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2FE34E1ECE734CA0AD170DCD92D15F86 /* AEAudioUnitModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3239B0512AE4D9239893E5980E41A4 /* AEAudioUnitModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		33DFBF684D808738EBF469A57DA96FFE /* AEAudioFileOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 385CD12A18FF61ED1142DA7B118E1AD4 /* AEAudioFileOutput.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		34945A43BEBC34275856A5EC50E026DF /* AEReverbModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F009BE9F06939CD5E2EAA75BD5F3FDB1 /* AEReverbModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3530025DF27F95B8B5D0B5F3BAD0E013 /* AEHighShelfModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E04976A0B197C996FC891D564DE911A /* AEHighShelfModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		361AFF972B011F2CC559C9531F52CCA0 /* AEOscillatorModule.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE7AFEF410409BF2C052D97C74AE2BF /* AEOscillatorModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		385BA4C96A20504685376BDE895B5E76 /* TPCircularBuffer+AudioBufferList.c in Sources */ = {isa = PBXBuildFile; fileRef = F95ED4B6DD54462F085C4E901894A0B1 /* TPCircularBuffer+AudioBufferList.c */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		39606B489CF3DE7D47F540C40CB8BD57 /* AEWeakRetainingProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C662D5A1B1CECF8473D3074384461A94 /* AEWeakRetainingProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3A789E9502FFD81A13717C627B431377 /* AEDynamicsProcessorModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 78A798EEB3834939AC5B78E51A4F4533 /* AEDynamicsProcessorModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3DF4D7267506AFA7A66BBEBB10E09BFD /* AEAudioFilePlayerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = BDA76C88BE8FC541D19FF367543B0D19 /* AEAudioFilePlayerModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		42B0622DBC79C14F03E98298CA645697 /* AEMessageQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 538A77F6F0CC8E71798A82E4024309DD /* AEMessageQueue.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		47CD542FF6CFEB2B36C4D425DFF27F0D /* AEAudioFileOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D2B1743FDF366EE1793973BC8E4F3B /* AEAudioFileOutput.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4C2999D7B63C01D6D876C09C5A6F1DD7 /* AEAudioFileRecorderModule.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EDE630223D31590A864E5F46906865 /* AEAudioFileRecorderModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		550E983C46EC20A9416F22CC591F20CF /* AEAudioFileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EFC976DBAE2C73F04B9E0C98F42341B /* AEAudioFileReader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5624713BA23DD823AEE4FACEB3778AA3 /* AEBandpassModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F81FB5920D7DE5294843C477E470ABA /* AEBandpassModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		586A4CDA06F12E37FB12F3DE3F8124E4 /* AEReverbModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 560C16217875BF35CF33F02E51E76A66 /* AEReverbModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5BD793C601EB23C60151A00598F75DC9 /* AEHighShelfModule.h in Headers */ = {isa = PBXBuildFile; fileRef = B3AE4BE7B9B2C700BFCEBF57364DE1FE /* AEHighShelfModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6303DB7CCDA6A96F959FF646D500CD16 /* AEAudioFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE217724444EDCE536F0093490E933B /* AEAudioFileReader.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		690FDB711C08033C22B19E8603BEC036 /* AEDistortionModule.h in Headers */ = {isa = PBXBuildFile; fileRef = EC93C14E6410CDA72370CDAC7EF3129B /* AEDistortionModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6A57DDF9037488CAAFE58412B25803AB /* AEAudioThreadEndpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 3887512FFE913E886629B1C6F789E207 /* AEAudioThreadEndpoint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		745089CFBB6C0E85870584237B742219 /* AEUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAA03EE11A30F4021CF7764517534A6 /* AEUtilities.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		74640DF2241EA7EC0B494A934EF6445B /* AEAudioFilePlayerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F46323AB6D7ACEDF723275F1EEE6134 /* AEAudioFilePlayerModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		762B0495E80BCF0DE6934672F363B137 /* AENewTimePitchModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E62AEB730DB3D7F8CC681D1EDD362E /* AENewTimePitchModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7A9090B7B1A8DCBDF7AD52FC09179BEE /* AESplitterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3A64068ECF5A410ACA23DF7F75108 /* AESplitterModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7AE95C29F6A597509E846C3968826B40 /* AEUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E5DAC2D6210F09BE02DA62D92E2391BD /* AEUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E02E335BA93C8221704301802AACC86 /* TheAmazingAudioEngine-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F04AC2106B6083549B3A960FE1CC6EB /* TheAmazingAudioEngine-dummy.m */; };
+		7FB5842AEBE78594BDE90856011C11EC /* AEAudioUnitModule.h in Headers */ = {isa = PBXBuildFile; fileRef = A5C9D5EC011F47B522E2FA1A2F92C910 /* AEAudioUnitModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		812382B3AA481D24FE9B2746D6F97A45 /* AECircularBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = D09922658296FA6EB6EB4DF0BB9C6318 /* AECircularBuffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8382E79C7013E8D8A42DD8FB51843522 /* AESubrendererModule.h in Headers */ = {isa = PBXBuildFile; fileRef = CBBE7E128637A3D9578F38601913C5EC /* AESubrendererModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		845983EE6C03DF1BAE4162D7F3417DC8 /* AEDynamicsProcessorModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 7722AE708DDAB5E8E5957E091B5FB1DA /* AEDynamicsProcessorModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8471684206F710BAD1B067B85008CFE4 /* AELowShelfModule.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA3BA5F1E098E99B5604FAB245107A6 /* AELowShelfModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		880BE4EC623FFC53B33115DED9F401C1 /* AEAudioUnitInputModule.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB68003125FDB3CBCD47F5DDD976C2 /* AEAudioUnitInputModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8BD0AC503BAB7048831202CA8669766D /* AEAudioThreadEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 345EC7AD67B12A73FD2D7DBC5DF7D729 /* AEAudioThreadEndpoint.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8CB5843EAA6B8924142F62145D3F14BA /* AELowShelfModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 923E9AA68390C91D2F6D56DDEE946012 /* AELowShelfModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8DE250F40D465ED14847BEC14A130E33 /* AEAudioUnitInputModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C18C0A6658C4B9B480390A4181ECAABE /* AEAudioUnitInputModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8EA65E50AF89AA69C5D9ACC8A267F882 /* AEManagedValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBF502FF9D099AECEC229792FECA2B2 /* AEManagedValue.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9A4CAA327B3C1B39D55045BC5562708C /* AELowPassModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F082F795E8EC68A32C0A3F438EA3D60A /* AELowPassModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9B2013BA2E588C0AF1674817CE62C118 /* AEParametricEqModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 968ABC513E04FD04BF3216C4BFC086E7 /* AEParametricEqModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A0A7CF24AA88579C8385E9F9F2AA701B /* AEModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F0E2ADFA9C716E8BAC55DF7A960F93 /* AEModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A4A48253731F50D6F07C80A997C78CB7 /* AERenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB243101640D7D5204DDF08395A95598 /* AERenderer.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A5682E8F9778F08493E68211CB6D31CE /* AEDistortionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 84168A2D9ADA10BB23BEE119BEC301F8 /* AEDistortionModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A93E77EA1A196A3D87565AB9E1F0A716 /* AEArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D524A3D2383FC96AF29840EC6590FE3 /* AEArray.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AA554837D0B1C27B624D541AFE14CB21 /* AENewTimePitchModule.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B66C65ED780F2CADFCA2E4682A8D35 /* AENewTimePitchModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AA987C076A39DA0E7E57E8BB522595BE /* AERealtimeWatchdog.h in Headers */ = {isa = PBXBuildFile; fileRef = AB45C2B3BAFB3B61D020CF4AB6E182B3 /* AERealtimeWatchdog.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB26F8F0C7CE45F1DB06BCA89AE07A74 /* AEVarispeedModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F3FAEDA1D828EDAEBCB5EDC5511688 /* AEVarispeedModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AC0599045E1D9304C9A527020DA76966 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 6CB68F921EF5EDF14D5F1D2B677E3DE0 /* TPCircularBuffer.c */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B58DEF86D10691D5672618F835650C3D /* AEAudioBufferListUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A4B561ADDFBCCB656B8FF0222635BA /* AEAudioBufferListUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B6D5597306DAB42132CAE27286548511 /* AEPeakLimiterModule.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8849C71D1B65557B0E8391E1E0C6DA /* AEPeakLimiterModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD804006A283B8AA93410E6F38A9D19C /* AEPeakLimiterModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 594C58FA6C1C0668E9927472D92FA519 /* AEPeakLimiterModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BDE035E5AFF6ED7CD5AF12AE5DED1E16 /* AEIOAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE9548E8208F673CC8683584983EB9F /* AEIOAudioUnit.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C213E3907AE926AFC86E3FE8F9EFCE70 /* AETypes.m in Sources */ = {isa = PBXBuildFile; fileRef = FABD71C4D59932D398C323E90CED97DA /* AETypes.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C2DA6B9DB00A845ECFE9886BE25455E7 /* AEAudioBufferListUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6745C2407E094BB5945E7D3673165946 /* AEAudioBufferListUtilities.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D231E20693C0D9AFEE4841861C1C447F /* AEDelayModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1D646633D7E0FF077A829AB36FFD2A /* AEDelayModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D38C4B591C702D2E15D8B46FC75AF3A9 /* AEMixerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AFFA3C55F17ED657D05F85FD75593AC /* AEMixerModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4EED57D8C8EF7B9132ECDE4D89452EE /* TPCircularBuffer+AudioBufferList.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C4651784FB718140D9D79C7CCAB884F /* TPCircularBuffer+AudioBufferList.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D503125DBC553EE00F5C25D637BF57B0 /* AEOscillatorModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B0801D8F27DF656EDC39E02D8B1F0D7 /* AEOscillatorModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D5D3B643B41FC53D22C0356D9F57B825 /* AEDSPUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A784C382E937920DD0554926B208AF4 /* AEDSPUtilities.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DAECD0202AB8A72F72DD0D8DB176219B /* AEBandpassModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A211982584950E0E29052929AF7AFC8 /* AEBandpassModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DCCD59C2D414844BA8EA5A99E9DABCC0 /* AESubrendererModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E22B091EBCD08C187948428DC4423C /* AESubrendererModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DE1DE61CD4FBDC49B0E3D65B8B01162B /* AEMixerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3884FDE82C34781965577B768FBFF94D /* AEMixerModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DEF333F5D8978E9B1D0ECAAC4CC673E1 /* AEBufferStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF348FD724FA46183488D9420B542B7 /* AEBufferStack.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E249155F6A374CE40E329E71D614CD0C /* AEHighPassModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C0119078C1AE5FA5B27275BDE3830E68 /* AEHighPassModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E252FB456DAE860F648681594A98E99F /* TheAmazingAudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AD147FCE9F582D7B6753D0805D1000 /* TheAmazingAudioEngine.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E35A19207087191AC062188DC738F7B3 /* AETime.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A615696CE83791A9A7DCF945C17F2FE /* AETime.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E44A806653E7450F29B20B589D0C6A1D /* AEBufferStack.h in Headers */ = {isa = PBXBuildFile; fileRef = BC466E08B0DE43EFCD633B628EF1EA5A /* AEBufferStack.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E7E8EBEDB876816F712B2E8C5DCF76EF /* AEAudioFileRecorderModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB957C58C85D0372077D86BA3C089B /* AEAudioFileRecorderModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E92ACD295896D7EA27A16C4EB1B2EAFE /* AEManagedValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 10C52F6CA9FE91A0E7841169287B7575 /* AEManagedValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E9EAD955C18CA9C121C8B929A6111541 /* AECircularBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F3CACC25E2326B56EFEBFBB1BB6512 /* AECircularBuffer.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EE4FB4A8E321AA290C25506623EB9B60 /* AERealtimeWatchdog.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DC698A2E726EA451006327236D03F0 /* AERealtimeWatchdog.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EFCFA13DD487DC04B7B92C4C134BC182 /* AERenderContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 009A4176E12B151173BD66660B4B3F7F /* AERenderContext.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F1DE3B1B6B21CD105B0EDBA2FA3B7D6F /* AEIOAudioUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B3B3A8A7C3D3AE1FB8EB101F0D77179 /* AEIOAudioUnit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F45179DF1D391975DB6D2156F52A5250 /* AEParametricEqModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 516F0AAF2E13BFEC24B62D3A97977BC6 /* AEParametricEqModule.m */; settings = {COMPILER_FLAGS = "-DTPCircularBuffer=AECB -D_TPCircularBufferInit=_AECBInit -DTPCircularBufferCleanup=AECBClean -DTPCircularBufferClear=AECBClear -DTPCircularBufferSetAtomic=AECBSetAtomic -DTPCircularBufferTail=AECBTail -DTPCircularBufferConsume=AECBConsume -DTPCircularBufferHead=AECBHead -DTPCircularBufferProduce=AECBProduce -DTPCircularBufferProduceBytes=AECBProduceBytes -DTPCircularBufferPrepareEmptyAudioBufferList=AECBPrepareEmptyBL -DTPCircularBufferPrepareEmptyAudioBufferListWithAudioFormat=AECBPrepareEmptyBLWithAF -DTPCircularBufferProduceAudioBufferList=AECBProduceBL -DTPCircularBufferCopyAudioBufferList=AECBCopyBL -DTPCircularBufferNextBufferList=AECBNextBL -DTPCircularBufferNextBufferListAfter=AECBNextBLAfter -DTPCircularBufferConsumeNextBufferList=AECBConsumeBL -DTPCircularBufferGetAvailableSpace=AECBGetAvailableSpace -DTPCircularBufferConsumeNextBufferListPartial=AECBConsumeBLPartial -DTPCircularBufferDequeueBufferListFrames=AECBDequeueBLFrames -DTPCircularBufferPeek=AECBPeek -DTPCircularBufferPeekContiguous=AECBPeekContiguous -D_TPCircularBufferPeek=_AECBPeek -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F72B5F3C7FF03ADC00BBDDFBA9D42308 /* AEMessageQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BCA97324FC38EFB0A2218986F9D1017 /* AEMessageQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F7F97935DB7B6CA0589CC218702EC9BD /* AERenderContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EF9B8C3E82EE0D40DAEB4A217D04B83 /* AERenderContext.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F98925C8EE2471AF32F71F6CB26E101D /* Pods-STAudioTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A12C78ED2B39153C251BFBE247905ECF /* Pods-STAudioTest-dummy.m */; };
+		FBE7968A2A8240A1740808B02BC5267D /* AEMainThreadEndpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B17FC03EF8EB9F744CDC748B6A69730 /* AEMainThreadEndpoint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7980F322EC84AEAAF29788AA2F04313A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE52A28879BFA0AC340EA8EC5A39FBAA;
+			remoteInfo = TheAmazingAudioEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00297AB7AC85278FC3EF304BF3195DD6 /* Pods-STAudioTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STAudioTest.debug.xcconfig"; sourceTree = "<group>"; };
+		009A4176E12B151173BD66660B4B3F7F /* AERenderContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AERenderContext.m; path = TheAmazingAudioEngine/Core/AERenderContext.m; sourceTree = "<group>"; };
+		068BA21B2A18352FF99D6A12F812406E /* TheAmazingAudioEngine-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TheAmazingAudioEngine-prefix.pch"; sourceTree = "<group>"; };
+		0A784C382E937920DD0554926B208AF4 /* AEDSPUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEDSPUtilities.m; path = TheAmazingAudioEngine/Utilities/AEDSPUtilities.m; sourceTree = "<group>"; };
+		0C4651784FB718140D9D79C7CCAB884F /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TPCircularBuffer+AudioBufferList.h"; path = "TheAmazingAudioEngine/Library/TPCircularBuffer/TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
+		0E04976A0B197C996FC891D564DE911A /* AEHighShelfModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEHighShelfModule.m; path = TheAmazingAudioEngine/Modules/Processing/AEHighShelfModule.m; sourceTree = "<group>"; };
+		0EC57897BE0BAC65171132220CBB011A /* AETypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AETypes.h; path = TheAmazingAudioEngine/Core/AETypes.h; sourceTree = "<group>"; };
+		0F04AC2106B6083549B3A960FE1CC6EB /* TheAmazingAudioEngine-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TheAmazingAudioEngine-dummy.m"; sourceTree = "<group>"; };
+		10C52F6CA9FE91A0E7841169287B7575 /* AEManagedValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEManagedValue.h; path = TheAmazingAudioEngine/Core/AEManagedValue.h; sourceTree = "<group>"; };
+		11A942019E4FBDF85F28314AA2ED181E /* libPods-STAudioTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-STAudioTest.a"; path = "libPods-STAudioTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3B3A8A7C3D3AE1FB8EB101F0D77179 /* AEIOAudioUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEIOAudioUnit.h; path = TheAmazingAudioEngine/Utilities/AEIOAudioUnit.h; sourceTree = "<group>"; };
+		1EF348FD724FA46183488D9420B542B7 /* AEBufferStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEBufferStack.m; path = TheAmazingAudioEngine/Core/AEBufferStack.m; sourceTree = "<group>"; };
+		206EEF30034B176B00642B67A81626BD /* AEDSPUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEDSPUtilities.h; path = TheAmazingAudioEngine/Utilities/AEDSPUtilities.h; sourceTree = "<group>"; };
+		21928F7D9B04EA7BC15D69E6ECFD3137 /* AEDelayModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEDelayModule.m; path = TheAmazingAudioEngine/Modules/Processing/AEDelayModule.m; sourceTree = "<group>"; };
+		2A3239B0512AE4D9239893E5980E41A4 /* AEAudioUnitModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioUnitModule.m; path = TheAmazingAudioEngine/Modules/AEAudioUnitModule.m; sourceTree = "<group>"; };
+		2EBF502FF9D099AECEC229792FECA2B2 /* AEManagedValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEManagedValue.m; path = TheAmazingAudioEngine/Core/AEManagedValue.m; sourceTree = "<group>"; };
+		345EC7AD67B12A73FD2D7DBC5DF7D729 /* AEAudioThreadEndpoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioThreadEndpoint.m; path = TheAmazingAudioEngine/Utilities/AEAudioThreadEndpoint.m; sourceTree = "<group>"; };
+		35FCAD9A267FE57AA5AFEFFF9007E899 /* AEModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEModule.h; path = TheAmazingAudioEngine/Modules/AEModule.h; sourceTree = "<group>"; };
+		385CD12A18FF61ED1142DA7B118E1AD4 /* AEAudioFileOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioFileOutput.h; path = TheAmazingAudioEngine/Outputs/AEAudioFileOutput.h; sourceTree = "<group>"; };
+		3884FDE82C34781965577B768FBFF94D /* AEMixerModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEMixerModule.m; path = TheAmazingAudioEngine/Modules/Generation/AEMixerModule.m; sourceTree = "<group>"; };
+		3887512FFE913E886629B1C6F789E207 /* AEAudioThreadEndpoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioThreadEndpoint.h; path = TheAmazingAudioEngine/Utilities/AEAudioThreadEndpoint.h; sourceTree = "<group>"; };
+		3AFFA3C55F17ED657D05F85FD75593AC /* AEMixerModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEMixerModule.h; path = TheAmazingAudioEngine/Modules/Generation/AEMixerModule.h; sourceTree = "<group>"; };
+		3B17FC03EF8EB9F744CDC748B6A69730 /* AEMainThreadEndpoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEMainThreadEndpoint.h; path = TheAmazingAudioEngine/Utilities/AEMainThreadEndpoint.h; sourceTree = "<group>"; };
+		49EB957C58C85D0372077D86BA3C089B /* AEAudioFileRecorderModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioFileRecorderModule.m; path = TheAmazingAudioEngine/Modules/Taps/AEAudioFileRecorderModule.m; sourceTree = "<group>"; };
+		4BF51333035E95ABEBBDBAE8D0EFF579 /* AELowPassModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AELowPassModule.h; path = TheAmazingAudioEngine/Modules/Processing/AELowPassModule.h; sourceTree = "<group>"; };
+		4D4867D179A3DCC1F5BC345BCD77BF77 /* AEAudioUnitOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioUnitOutput.h; path = TheAmazingAudioEngine/Outputs/AEAudioUnitOutput.h; sourceTree = "<group>"; };
+		4D524A3D2383FC96AF29840EC6590FE3 /* AEArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEArray.h; path = TheAmazingAudioEngine/Core/AEArray.h; sourceTree = "<group>"; };
+		516F0AAF2E13BFEC24B62D3A97977BC6 /* AEParametricEqModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEParametricEqModule.m; path = TheAmazingAudioEngine/Modules/Processing/AEParametricEqModule.m; sourceTree = "<group>"; };
+		51BA85F9D915C29A4991863FFC02BEEB /* AESplitterModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AESplitterModule.h; path = TheAmazingAudioEngine/Modules/Generation/AESplitterModule.h; sourceTree = "<group>"; };
+		536011063F14F97F2A3F1B4DA9B97DBB /* AEWeakRetainingProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEWeakRetainingProxy.m; path = TheAmazingAudioEngine/Utilities/AEWeakRetainingProxy.m; sourceTree = "<group>"; };
+		538A77F6F0CC8E71798A82E4024309DD /* AEMessageQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEMessageQueue.m; path = TheAmazingAudioEngine/Utilities/AEMessageQueue.m; sourceTree = "<group>"; };
+		560C16217875BF35CF33F02E51E76A66 /* AEReverbModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEReverbModule.h; path = TheAmazingAudioEngine/Modules/Processing/AEReverbModule.h; sourceTree = "<group>"; };
+		594C58FA6C1C0668E9927472D92FA519 /* AEPeakLimiterModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEPeakLimiterModule.m; path = TheAmazingAudioEngine/Modules/Processing/AEPeakLimiterModule.m; sourceTree = "<group>"; };
+		5E1D646633D7E0FF077A829AB36FFD2A /* AEDelayModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEDelayModule.h; path = TheAmazingAudioEngine/Modules/Processing/AEDelayModule.h; sourceTree = "<group>"; };
+		610B02931B9F7F0EDB0E160412EEAB24 /* Pods-STAudioTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STAudioTest.release.xcconfig"; sourceTree = "<group>"; };
+		63AD147FCE9F582D7B6753D0805D1000 /* TheAmazingAudioEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TheAmazingAudioEngine.h; path = TheAmazingAudioEngine/TheAmazingAudioEngine.h; sourceTree = "<group>"; };
+		6745C2407E094BB5945E7D3673165946 /* AEAudioBufferListUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioBufferListUtilities.m; path = TheAmazingAudioEngine/Utilities/AEAudioBufferListUtilities.m; sourceTree = "<group>"; };
+		694F89ED52315D86799C90FC32BCF2BF /* TheAmazingAudioEngine.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TheAmazingAudioEngine.xcconfig; sourceTree = "<group>"; };
+		6CB68F921EF5EDF14D5F1D2B677E3DE0 /* TPCircularBuffer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = TPCircularBuffer.c; path = TheAmazingAudioEngine/Library/TPCircularBuffer/TPCircularBuffer.c; sourceTree = "<group>"; };
+		74D2B1743FDF366EE1793973BC8E4F3B /* AEAudioFileOutput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioFileOutput.m; path = TheAmazingAudioEngine/Outputs/AEAudioFileOutput.m; sourceTree = "<group>"; };
+		7722AE708DDAB5E8E5957E091B5FB1DA /* AEDynamicsProcessorModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEDynamicsProcessorModule.m; path = TheAmazingAudioEngine/Modules/Processing/AEDynamicsProcessorModule.m; sourceTree = "<group>"; };
+		78A798EEB3834939AC5B78E51A4F4533 /* AEDynamicsProcessorModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEDynamicsProcessorModule.h; path = TheAmazingAudioEngine/Modules/Processing/AEDynamicsProcessorModule.h; sourceTree = "<group>"; };
+		79F0E2ADFA9C716E8BAC55DF7A960F93 /* AEModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEModule.m; path = TheAmazingAudioEngine/Modules/AEModule.m; sourceTree = "<group>"; };
+		7A615696CE83791A9A7DCF945C17F2FE /* AETime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AETime.h; path = TheAmazingAudioEngine/Core/AETime.h; sourceTree = "<group>"; };
+		7EFC976DBAE2C73F04B9E0C98F42341B /* AEAudioFileReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioFileReader.h; path = TheAmazingAudioEngine/Utilities/AEAudioFileReader.h; sourceTree = "<group>"; };
+		7F46323AB6D7ACEDF723275F1EEE6134 /* AEAudioFilePlayerModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioFilePlayerModule.m; path = TheAmazingAudioEngine/Modules/Generation/AEAudioFilePlayerModule.m; sourceTree = "<group>"; };
+		8400B5DBBB9009875098E26782E3EA7B /* Pods-STAudioTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STAudioTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		84168A2D9ADA10BB23BEE119BEC301F8 /* AEDistortionModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEDistortionModule.m; path = TheAmazingAudioEngine/Modules/Processing/AEDistortionModule.m; sourceTree = "<group>"; };
+		86E62AEB730DB3D7F8CC681D1EDD362E /* AENewTimePitchModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AENewTimePitchModule.m; path = TheAmazingAudioEngine/Modules/Processing/AENewTimePitchModule.m; sourceTree = "<group>"; };
+		87DC698A2E726EA451006327236D03F0 /* AERealtimeWatchdog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AERealtimeWatchdog.m; path = TheAmazingAudioEngine/Utilities/AERealtimeWatchdog.m; sourceTree = "<group>"; };
+		8B0801D8F27DF656EDC39E02D8B1F0D7 /* AEOscillatorModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEOscillatorModule.h; path = TheAmazingAudioEngine/Modules/Generation/AEOscillatorModule.h; sourceTree = "<group>"; };
+		8BCA97324FC38EFB0A2218986F9D1017 /* AEMessageQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEMessageQueue.h; path = TheAmazingAudioEngine/Utilities/AEMessageQueue.h; sourceTree = "<group>"; };
+		8D46CB40149AD153080F26E609C691CF /* AEArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEArray.m; path = TheAmazingAudioEngine/Core/AEArray.m; sourceTree = "<group>"; };
+		8EF9B8C3E82EE0D40DAEB4A217D04B83 /* AERenderContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AERenderContext.h; path = TheAmazingAudioEngine/Core/AERenderContext.h; sourceTree = "<group>"; };
+		923E9AA68390C91D2F6D56DDEE946012 /* AELowShelfModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AELowShelfModule.h; path = TheAmazingAudioEngine/Modules/Processing/AELowShelfModule.h; sourceTree = "<group>"; };
+		968ABC513E04FD04BF3216C4BFC086E7 /* AEParametricEqModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEParametricEqModule.h; path = TheAmazingAudioEngine/Modules/Processing/AEParametricEqModule.h; sourceTree = "<group>"; };
+		98F3CACC25E2326B56EFEBFBB1BB6512 /* AECircularBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AECircularBuffer.m; path = TheAmazingAudioEngine/Utilities/AECircularBuffer.m; sourceTree = "<group>"; };
+		9A211982584950E0E29052929AF7AFC8 /* AEBandpassModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEBandpassModule.h; path = TheAmazingAudioEngine/Modules/Processing/AEBandpassModule.h; sourceTree = "<group>"; };
+		9CE3A64068ECF5A410ACA23DF7F75108 /* AESplitterModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AESplitterModule.m; path = TheAmazingAudioEngine/Modules/Generation/AESplitterModule.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EE217724444EDCE536F0093490E933B /* AEAudioFileReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioFileReader.m; path = TheAmazingAudioEngine/Utilities/AEAudioFileReader.m; sourceTree = "<group>"; };
+		9F81FB5920D7DE5294843C477E470ABA /* AEBandpassModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEBandpassModule.m; path = TheAmazingAudioEngine/Modules/Processing/AEBandpassModule.m; sourceTree = "<group>"; };
+		A12C78ED2B39153C251BFBE247905ECF /* Pods-STAudioTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STAudioTest-dummy.m"; sourceTree = "<group>"; };
+		A31A03F84F5AC2B8EF4DF026447B83E6 /* AETime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AETime.m; path = TheAmazingAudioEngine/Core/AETime.m; sourceTree = "<group>"; };
+		A5A4B561ADDFBCCB656B8FF0222635BA /* AEAudioBufferListUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioBufferListUtilities.h; path = TheAmazingAudioEngine/Utilities/AEAudioBufferListUtilities.h; sourceTree = "<group>"; };
+		A5C9D5EC011F47B522E2FA1A2F92C910 /* AEAudioUnitModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioUnitModule.h; path = TheAmazingAudioEngine/Modules/AEAudioUnitModule.h; sourceTree = "<group>"; };
+		A7E22B091EBCD08C187948428DC4423C /* AESubrendererModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AESubrendererModule.m; path = TheAmazingAudioEngine/Modules/AESubrendererModule.m; sourceTree = "<group>"; };
+		A90F312644DE6863C6AC154917A5B513 /* AEAudioUnitOutput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioUnitOutput.m; path = TheAmazingAudioEngine/Outputs/AEAudioUnitOutput.m; sourceTree = "<group>"; };
+		AB45C2B3BAFB3B61D020CF4AB6E182B3 /* AERealtimeWatchdog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AERealtimeWatchdog.h; path = TheAmazingAudioEngine/Utilities/AERealtimeWatchdog.h; sourceTree = "<group>"; };
+		B113406A6A69159B5F84F69251D1EAE7 /* libTheAmazingAudioEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTheAmazingAudioEngine.a; path = libTheAmazingAudioEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3AE4BE7B9B2C700BFCEBF57364DE1FE /* AEHighShelfModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEHighShelfModule.h; path = TheAmazingAudioEngine/Modules/Processing/AEHighShelfModule.h; sourceTree = "<group>"; };
+		B92DA7AC8DF07EAE575F03C8B4CC1EFE /* TPCircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = TheAmazingAudioEngine/Library/TPCircularBuffer/TPCircularBuffer.h; sourceTree = "<group>"; };
+		BBA3BA5F1E098E99B5604FAB245107A6 /* AELowShelfModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AELowShelfModule.m; path = TheAmazingAudioEngine/Modules/Processing/AELowShelfModule.m; sourceTree = "<group>"; };
+		BC466E08B0DE43EFCD633B628EF1EA5A /* AEBufferStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEBufferStack.h; path = TheAmazingAudioEngine/Core/AEBufferStack.h; sourceTree = "<group>"; };
+		BCAA03EE11A30F4021CF7764517534A6 /* AEUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEUtilities.m; path = TheAmazingAudioEngine/Utilities/AEUtilities.m; sourceTree = "<group>"; };
+		BDA76C88BE8FC541D19FF367543B0D19 /* AEAudioFilePlayerModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioFilePlayerModule.h; path = TheAmazingAudioEngine/Modules/Generation/AEAudioFilePlayerModule.h; sourceTree = "<group>"; };
+		C0119078C1AE5FA5B27275BDE3830E68 /* AEHighPassModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEHighPassModule.m; path = TheAmazingAudioEngine/Modules/Processing/AEHighPassModule.m; sourceTree = "<group>"; };
+		C18C0A6658C4B9B480390A4181ECAABE /* AEAudioUnitInputModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEAudioUnitInputModule.m; path = TheAmazingAudioEngine/Modules/Generation/AEAudioUnitInputModule.m; sourceTree = "<group>"; };
+		C1F87491490306BE3DB1A8F2B25497BD /* AEHighPassModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEHighPassModule.h; path = TheAmazingAudioEngine/Modules/Processing/AEHighPassModule.h; sourceTree = "<group>"; };
+		C241A662A04FCF9BFA398B8D2FC71332 /* Pods-STAudioTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STAudioTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C4F3FAEDA1D828EDAEBCB5EDC5511688 /* AEVarispeedModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEVarispeedModule.m; path = TheAmazingAudioEngine/Modules/Processing/AEVarispeedModule.m; sourceTree = "<group>"; };
+		C662D5A1B1CECF8473D3074384461A94 /* AEWeakRetainingProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEWeakRetainingProxy.h; path = TheAmazingAudioEngine/Utilities/AEWeakRetainingProxy.h; sourceTree = "<group>"; };
+		C7B66C65ED780F2CADFCA2E4682A8D35 /* AENewTimePitchModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AENewTimePitchModule.h; path = TheAmazingAudioEngine/Modules/Processing/AENewTimePitchModule.h; sourceTree = "<group>"; };
+		CB243101640D7D5204DDF08395A95598 /* AERenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AERenderer.m; path = TheAmazingAudioEngine/Renderers/AERenderer.m; sourceTree = "<group>"; };
+		CBBE7E128637A3D9578F38601913C5EC /* AESubrendererModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AESubrendererModule.h; path = TheAmazingAudioEngine/Modules/AESubrendererModule.h; sourceTree = "<group>"; };
+		CFB6E30C527D7C994BCD274CCA45D55A /* AERenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AERenderer.h; path = TheAmazingAudioEngine/Renderers/AERenderer.h; sourceTree = "<group>"; };
+		D09922658296FA6EB6EB4DF0BB9C6318 /* AECircularBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AECircularBuffer.h; path = TheAmazingAudioEngine/Utilities/AECircularBuffer.h; sourceTree = "<group>"; };
+		DCFD914527DFBED93B93CE072478047B /* AEMainThreadEndpoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEMainThreadEndpoint.m; path = TheAmazingAudioEngine/Utilities/AEMainThreadEndpoint.m; sourceTree = "<group>"; };
+		DFE9548E8208F673CC8683584983EB9F /* AEIOAudioUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEIOAudioUnit.m; path = TheAmazingAudioEngine/Utilities/AEIOAudioUnit.m; sourceTree = "<group>"; };
+		E5DAC2D6210F09BE02DA62D92E2391BD /* AEUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEUtilities.h; path = TheAmazingAudioEngine/Utilities/AEUtilities.h; sourceTree = "<group>"; };
+		E8EDE630223D31590A864E5F46906865 /* AEAudioFileRecorderModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioFileRecorderModule.h; path = TheAmazingAudioEngine/Modules/Taps/AEAudioFileRecorderModule.h; sourceTree = "<group>"; };
+		EC93C14E6410CDA72370CDAC7EF3129B /* AEDistortionModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEDistortionModule.h; path = TheAmazingAudioEngine/Modules/Processing/AEDistortionModule.h; sourceTree = "<group>"; };
+		ED8849C71D1B65557B0E8391E1E0C6DA /* AEPeakLimiterModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEPeakLimiterModule.h; path = TheAmazingAudioEngine/Modules/Processing/AEPeakLimiterModule.h; sourceTree = "<group>"; };
+		F009BE9F06939CD5E2EAA75BD5F3FDB1 /* AEReverbModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEReverbModule.m; path = TheAmazingAudioEngine/Modules/Processing/AEReverbModule.m; sourceTree = "<group>"; };
+		F082F795E8EC68A32C0A3F438EA3D60A /* AELowPassModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AELowPassModule.m; path = TheAmazingAudioEngine/Modules/Processing/AELowPassModule.m; sourceTree = "<group>"; };
+		F6EF458E05E6392B6D4F422ED7F56C67 /* AEVarispeedModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEVarispeedModule.h; path = TheAmazingAudioEngine/Modules/Processing/AEVarispeedModule.h; sourceTree = "<group>"; };
+		F95ED4B6DD54462F085C4E901894A0B1 /* TPCircularBuffer+AudioBufferList.c */ = {isa = PBXFileReference; includeInIndex = 1; name = "TPCircularBuffer+AudioBufferList.c"; path = "TheAmazingAudioEngine/Library/TPCircularBuffer/TPCircularBuffer+AudioBufferList.c"; sourceTree = "<group>"; };
+		FAAB68003125FDB3CBCD47F5DDD976C2 /* AEAudioUnitInputModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AEAudioUnitInputModule.h; path = TheAmazingAudioEngine/Modules/Generation/AEAudioUnitInputModule.h; sourceTree = "<group>"; };
+		FABD71C4D59932D398C323E90CED97DA /* AETypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AETypes.m; path = TheAmazingAudioEngine/Core/AETypes.m; sourceTree = "<group>"; };
+		FAE7AFEF410409BF2C052D97C74AE2BF /* AEOscillatorModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AEOscillatorModule.m; path = TheAmazingAudioEngine/Modules/Generation/AEOscillatorModule.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1310914931513219249A231F6B2E449A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45765FE70694D950AFA8AD51F7AE7BE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B8465B21E08BF548B3B709B9B6B8797 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				694F89ED52315D86799C90FC32BCF2BF /* TheAmazingAudioEngine.xcconfig */,
+				0F04AC2106B6083549B3A960FE1CC6EB /* TheAmazingAudioEngine-dummy.m */,
+				068BA21B2A18352FF99D6A12F812406E /* TheAmazingAudioEngine-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TheAmazingAudioEngine";
+			sourceTree = "<group>";
+		};
+		613D349C83D7178B0F5CD1D94AC1EB1A /* Pods-STAudioTest */ = {
+			isa = PBXGroup;
+			children = (
+				C241A662A04FCF9BFA398B8D2FC71332 /* Pods-STAudioTest-acknowledgements.markdown */,
+				8400B5DBBB9009875098E26782E3EA7B /* Pods-STAudioTest-acknowledgements.plist */,
+				A12C78ED2B39153C251BFBE247905ECF /* Pods-STAudioTest-dummy.m */,
+				00297AB7AC85278FC3EF304BF3195DD6 /* Pods-STAudioTest.debug.xcconfig */,
+				610B02931B9F7F0EDB0E160412EEAB24 /* Pods-STAudioTest.release.xcconfig */,
+			);
+			name = "Pods-STAudioTest";
+			path = "Target Support Files/Pods-STAudioTest";
+			sourceTree = "<group>";
+		};
+		740189C52154B5D4819543F6B84A98F7 /* TheAmazingAudioEngine */ = {
+			isa = PBXGroup;
+			children = (
+				4D524A3D2383FC96AF29840EC6590FE3 /* AEArray.h */,
+				8D46CB40149AD153080F26E609C691CF /* AEArray.m */,
+				A5A4B561ADDFBCCB656B8FF0222635BA /* AEAudioBufferListUtilities.h */,
+				6745C2407E094BB5945E7D3673165946 /* AEAudioBufferListUtilities.m */,
+				385CD12A18FF61ED1142DA7B118E1AD4 /* AEAudioFileOutput.h */,
+				74D2B1743FDF366EE1793973BC8E4F3B /* AEAudioFileOutput.m */,
+				BDA76C88BE8FC541D19FF367543B0D19 /* AEAudioFilePlayerModule.h */,
+				7F46323AB6D7ACEDF723275F1EEE6134 /* AEAudioFilePlayerModule.m */,
+				7EFC976DBAE2C73F04B9E0C98F42341B /* AEAudioFileReader.h */,
+				9EE217724444EDCE536F0093490E933B /* AEAudioFileReader.m */,
+				E8EDE630223D31590A864E5F46906865 /* AEAudioFileRecorderModule.h */,
+				49EB957C58C85D0372077D86BA3C089B /* AEAudioFileRecorderModule.m */,
+				3887512FFE913E886629B1C6F789E207 /* AEAudioThreadEndpoint.h */,
+				345EC7AD67B12A73FD2D7DBC5DF7D729 /* AEAudioThreadEndpoint.m */,
+				FAAB68003125FDB3CBCD47F5DDD976C2 /* AEAudioUnitInputModule.h */,
+				C18C0A6658C4B9B480390A4181ECAABE /* AEAudioUnitInputModule.m */,
+				A5C9D5EC011F47B522E2FA1A2F92C910 /* AEAudioUnitModule.h */,
+				2A3239B0512AE4D9239893E5980E41A4 /* AEAudioUnitModule.m */,
+				4D4867D179A3DCC1F5BC345BCD77BF77 /* AEAudioUnitOutput.h */,
+				A90F312644DE6863C6AC154917A5B513 /* AEAudioUnitOutput.m */,
+				9A211982584950E0E29052929AF7AFC8 /* AEBandpassModule.h */,
+				9F81FB5920D7DE5294843C477E470ABA /* AEBandpassModule.m */,
+				BC466E08B0DE43EFCD633B628EF1EA5A /* AEBufferStack.h */,
+				1EF348FD724FA46183488D9420B542B7 /* AEBufferStack.m */,
+				D09922658296FA6EB6EB4DF0BB9C6318 /* AECircularBuffer.h */,
+				98F3CACC25E2326B56EFEBFBB1BB6512 /* AECircularBuffer.m */,
+				5E1D646633D7E0FF077A829AB36FFD2A /* AEDelayModule.h */,
+				21928F7D9B04EA7BC15D69E6ECFD3137 /* AEDelayModule.m */,
+				EC93C14E6410CDA72370CDAC7EF3129B /* AEDistortionModule.h */,
+				84168A2D9ADA10BB23BEE119BEC301F8 /* AEDistortionModule.m */,
+				206EEF30034B176B00642B67A81626BD /* AEDSPUtilities.h */,
+				0A784C382E937920DD0554926B208AF4 /* AEDSPUtilities.m */,
+				78A798EEB3834939AC5B78E51A4F4533 /* AEDynamicsProcessorModule.h */,
+				7722AE708DDAB5E8E5957E091B5FB1DA /* AEDynamicsProcessorModule.m */,
+				C1F87491490306BE3DB1A8F2B25497BD /* AEHighPassModule.h */,
+				C0119078C1AE5FA5B27275BDE3830E68 /* AEHighPassModule.m */,
+				B3AE4BE7B9B2C700BFCEBF57364DE1FE /* AEHighShelfModule.h */,
+				0E04976A0B197C996FC891D564DE911A /* AEHighShelfModule.m */,
+				1B3B3A8A7C3D3AE1FB8EB101F0D77179 /* AEIOAudioUnit.h */,
+				DFE9548E8208F673CC8683584983EB9F /* AEIOAudioUnit.m */,
+				4BF51333035E95ABEBBDBAE8D0EFF579 /* AELowPassModule.h */,
+				F082F795E8EC68A32C0A3F438EA3D60A /* AELowPassModule.m */,
+				923E9AA68390C91D2F6D56DDEE946012 /* AELowShelfModule.h */,
+				BBA3BA5F1E098E99B5604FAB245107A6 /* AELowShelfModule.m */,
+				3B17FC03EF8EB9F744CDC748B6A69730 /* AEMainThreadEndpoint.h */,
+				DCFD914527DFBED93B93CE072478047B /* AEMainThreadEndpoint.m */,
+				10C52F6CA9FE91A0E7841169287B7575 /* AEManagedValue.h */,
+				2EBF502FF9D099AECEC229792FECA2B2 /* AEManagedValue.m */,
+				8BCA97324FC38EFB0A2218986F9D1017 /* AEMessageQueue.h */,
+				538A77F6F0CC8E71798A82E4024309DD /* AEMessageQueue.m */,
+				3AFFA3C55F17ED657D05F85FD75593AC /* AEMixerModule.h */,
+				3884FDE82C34781965577B768FBFF94D /* AEMixerModule.m */,
+				35FCAD9A267FE57AA5AFEFFF9007E899 /* AEModule.h */,
+				79F0E2ADFA9C716E8BAC55DF7A960F93 /* AEModule.m */,
+				C7B66C65ED780F2CADFCA2E4682A8D35 /* AENewTimePitchModule.h */,
+				86E62AEB730DB3D7F8CC681D1EDD362E /* AENewTimePitchModule.m */,
+				8B0801D8F27DF656EDC39E02D8B1F0D7 /* AEOscillatorModule.h */,
+				FAE7AFEF410409BF2C052D97C74AE2BF /* AEOscillatorModule.m */,
+				968ABC513E04FD04BF3216C4BFC086E7 /* AEParametricEqModule.h */,
+				516F0AAF2E13BFEC24B62D3A97977BC6 /* AEParametricEqModule.m */,
+				ED8849C71D1B65557B0E8391E1E0C6DA /* AEPeakLimiterModule.h */,
+				594C58FA6C1C0668E9927472D92FA519 /* AEPeakLimiterModule.m */,
+				AB45C2B3BAFB3B61D020CF4AB6E182B3 /* AERealtimeWatchdog.h */,
+				87DC698A2E726EA451006327236D03F0 /* AERealtimeWatchdog.m */,
+				8EF9B8C3E82EE0D40DAEB4A217D04B83 /* AERenderContext.h */,
+				009A4176E12B151173BD66660B4B3F7F /* AERenderContext.m */,
+				CFB6E30C527D7C994BCD274CCA45D55A /* AERenderer.h */,
+				CB243101640D7D5204DDF08395A95598 /* AERenderer.m */,
+				560C16217875BF35CF33F02E51E76A66 /* AEReverbModule.h */,
+				F009BE9F06939CD5E2EAA75BD5F3FDB1 /* AEReverbModule.m */,
+				51BA85F9D915C29A4991863FFC02BEEB /* AESplitterModule.h */,
+				9CE3A64068ECF5A410ACA23DF7F75108 /* AESplitterModule.m */,
+				CBBE7E128637A3D9578F38601913C5EC /* AESubrendererModule.h */,
+				A7E22B091EBCD08C187948428DC4423C /* AESubrendererModule.m */,
+				7A615696CE83791A9A7DCF945C17F2FE /* AETime.h */,
+				A31A03F84F5AC2B8EF4DF026447B83E6 /* AETime.m */,
+				0EC57897BE0BAC65171132220CBB011A /* AETypes.h */,
+				FABD71C4D59932D398C323E90CED97DA /* AETypes.m */,
+				E5DAC2D6210F09BE02DA62D92E2391BD /* AEUtilities.h */,
+				BCAA03EE11A30F4021CF7764517534A6 /* AEUtilities.m */,
+				F6EF458E05E6392B6D4F422ED7F56C67 /* AEVarispeedModule.h */,
+				C4F3FAEDA1D828EDAEBCB5EDC5511688 /* AEVarispeedModule.m */,
+				C662D5A1B1CECF8473D3074384461A94 /* AEWeakRetainingProxy.h */,
+				536011063F14F97F2A3F1B4DA9B97DBB /* AEWeakRetainingProxy.m */,
+				63AD147FCE9F582D7B6753D0805D1000 /* TheAmazingAudioEngine.h */,
+				6CB68F921EF5EDF14D5F1D2B677E3DE0 /* TPCircularBuffer.c */,
+				B92DA7AC8DF07EAE575F03C8B4CC1EFE /* TPCircularBuffer.h */,
+				F95ED4B6DD54462F085C4E901894A0B1 /* TPCircularBuffer+AudioBufferList.c */,
+				0C4651784FB718140D9D79C7CCAB884F /* TPCircularBuffer+AudioBufferList.h */,
+				2B8465B21E08BF548B3B709B9B6B8797 /* Support Files */,
+			);
+			name = TheAmazingAudioEngine;
+			path = TheAmazingAudioEngine;
+			sourceTree = "<group>";
+		};
+		C59B39812C9C80786A221D51E6696E54 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				613D349C83D7178B0F5CD1D94AC1EB1A /* Pods-STAudioTest */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				FA503713D9BC7954FCBB689D7F907D64 /* Pods */,
+				D764ED96A8AA9DFBADA9F5A941655B6B /* Products */,
+				C59B39812C9C80786A221D51E6696E54 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D764ED96A8AA9DFBADA9F5A941655B6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11A942019E4FBDF85F28314AA2ED181E /* libPods-STAudioTest.a */,
+				B113406A6A69159B5F84F69251D1EAE7 /* libTheAmazingAudioEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA503713D9BC7954FCBB689D7F907D64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				740189C52154B5D4819543F6B84A98F7 /* TheAmazingAudioEngine */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0714FC03A222A5E2B598040B27A07B79 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7761C48CFF58EBDBD3B19D96125F4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A93E77EA1A196A3D87565AB9E1F0A716 /* AEArray.h in Headers */,
+				B58DEF86D10691D5672618F835650C3D /* AEAudioBufferListUtilities.h in Headers */,
+				33DFBF684D808738EBF469A57DA96FFE /* AEAudioFileOutput.h in Headers */,
+				3DF4D7267506AFA7A66BBEBB10E09BFD /* AEAudioFilePlayerModule.h in Headers */,
+				550E983C46EC20A9416F22CC591F20CF /* AEAudioFileReader.h in Headers */,
+				4C2999D7B63C01D6D876C09C5A6F1DD7 /* AEAudioFileRecorderModule.h in Headers */,
+				6A57DDF9037488CAAFE58412B25803AB /* AEAudioThreadEndpoint.h in Headers */,
+				880BE4EC623FFC53B33115DED9F401C1 /* AEAudioUnitInputModule.h in Headers */,
+				7FB5842AEBE78594BDE90856011C11EC /* AEAudioUnitModule.h in Headers */,
+				244085EEB10E7B25799E2D2B64CF4578 /* AEAudioUnitOutput.h in Headers */,
+				DAECD0202AB8A72F72DD0D8DB176219B /* AEBandpassModule.h in Headers */,
+				E44A806653E7450F29B20B589D0C6A1D /* AEBufferStack.h in Headers */,
+				812382B3AA481D24FE9B2746D6F97A45 /* AECircularBuffer.h in Headers */,
+				D231E20693C0D9AFEE4841861C1C447F /* AEDelayModule.h in Headers */,
+				690FDB711C08033C22B19E8603BEC036 /* AEDistortionModule.h in Headers */,
+				28B6B9EBA435A81025B0F529CA3E4E94 /* AEDSPUtilities.h in Headers */,
+				3A789E9502FFD81A13717C627B431377 /* AEDynamicsProcessorModule.h in Headers */,
+				2BAABA639FBF812ADFB0BF3659EFCC2B /* AEHighPassModule.h in Headers */,
+				5BD793C601EB23C60151A00598F75DC9 /* AEHighShelfModule.h in Headers */,
+				F1DE3B1B6B21CD105B0EDBA2FA3B7D6F /* AEIOAudioUnit.h in Headers */,
+				080D7BEE99B412BDB02DB889DD59541C /* AELowPassModule.h in Headers */,
+				8CB5843EAA6B8924142F62145D3F14BA /* AELowShelfModule.h in Headers */,
+				FBE7968A2A8240A1740808B02BC5267D /* AEMainThreadEndpoint.h in Headers */,
+				E92ACD295896D7EA27A16C4EB1B2EAFE /* AEManagedValue.h in Headers */,
+				F72B5F3C7FF03ADC00BBDDFBA9D42308 /* AEMessageQueue.h in Headers */,
+				D38C4B591C702D2E15D8B46FC75AF3A9 /* AEMixerModule.h in Headers */,
+				1C2D8138D50FAB0E6D5C770BE922D6BD /* AEModule.h in Headers */,
+				AA554837D0B1C27B624D541AFE14CB21 /* AENewTimePitchModule.h in Headers */,
+				D503125DBC553EE00F5C25D637BF57B0 /* AEOscillatorModule.h in Headers */,
+				9B2013BA2E588C0AF1674817CE62C118 /* AEParametricEqModule.h in Headers */,
+				B6D5597306DAB42132CAE27286548511 /* AEPeakLimiterModule.h in Headers */,
+				AA987C076A39DA0E7E57E8BB522595BE /* AERealtimeWatchdog.h in Headers */,
+				F7F97935DB7B6CA0589CC218702EC9BD /* AERenderContext.h in Headers */,
+				15DEFCB3B3053EC65DDF59F110ECB8EA /* AERenderer.h in Headers */,
+				586A4CDA06F12E37FB12F3DE3F8124E4 /* AEReverbModule.h in Headers */,
+				20970A60280DBA09BA5DAE3CAD6BF929 /* AESplitterModule.h in Headers */,
+				8382E79C7013E8D8A42DD8FB51843522 /* AESubrendererModule.h in Headers */,
+				E35A19207087191AC062188DC738F7B3 /* AETime.h in Headers */,
+				143933ED9E137AB88DF4040C633749F7 /* AETypes.h in Headers */,
+				7AE95C29F6A597509E846C3968826B40 /* AEUtilities.h in Headers */,
+				24FE728EFB4799C9FCCACB7B79ADC78D /* AEVarispeedModule.h in Headers */,
+				39606B489CF3DE7D47F540C40CB8BD57 /* AEWeakRetainingProxy.h in Headers */,
+				E252FB456DAE860F648681594A98E99F /* TheAmazingAudioEngine.h in Headers */,
+				D4EED57D8C8EF7B9132ECDE4D89452EE /* TPCircularBuffer+AudioBufferList.h in Headers */,
+				1C90F2644F6B0D025D4D522CDE494C6C /* TPCircularBuffer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AD0C8D0F7076221D76A1107B0FFB2113 /* Pods-STAudioTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F7BEB7247922430A91ACA4DCFE3969 /* Build configuration list for PBXNativeTarget "Pods-STAudioTest" */;
+			buildPhases = (
+				0714FC03A222A5E2B598040B27A07B79 /* Headers */,
+				D687D0D99E6BBFF02CCBEEBCD49FB9F5 /* Sources */,
+				1310914931513219249A231F6B2E449A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				265AF51EEB986919537AB9F2CC14C30E /* PBXTargetDependency */,
+			);
+			name = "Pods-STAudioTest";
+			productName = "Pods-STAudioTest";
+			productReference = 11A942019E4FBDF85F28314AA2ED181E /* libPods-STAudioTest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AE52A28879BFA0AC340EA8EC5A39FBAA /* TheAmazingAudioEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 915C3DAA8198D4EF0060F9EC4DD9A8EF /* Build configuration list for PBXNativeTarget "TheAmazingAudioEngine" */;
+			buildPhases = (
+				DF7761C48CFF58EBDBD3B19D96125F4F /* Headers */,
+				8A129591393E85B1CF4BECC3498464A5 /* Sources */,
+				45765FE70694D950AFA8AD51F7AE7BE7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheAmazingAudioEngine;
+			productName = TheAmazingAudioEngine;
+			productReference = B113406A6A69159B5F84F69251D1EAE7 /* libTheAmazingAudioEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D764ED96A8AA9DFBADA9F5A941655B6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD0C8D0F7076221D76A1107B0FFB2113 /* Pods-STAudioTest */,
+				AE52A28879BFA0AC340EA8EC5A39FBAA /* TheAmazingAudioEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A129591393E85B1CF4BECC3498464A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				195E7C23B98D7FDA5B00387355091B99 /* AEArray.m in Sources */,
+				C2DA6B9DB00A845ECFE9886BE25455E7 /* AEAudioBufferListUtilities.m in Sources */,
+				47CD542FF6CFEB2B36C4D425DFF27F0D /* AEAudioFileOutput.m in Sources */,
+				74640DF2241EA7EC0B494A934EF6445B /* AEAudioFilePlayerModule.m in Sources */,
+				6303DB7CCDA6A96F959FF646D500CD16 /* AEAudioFileReader.m in Sources */,
+				E7E8EBEDB876816F712B2E8C5DCF76EF /* AEAudioFileRecorderModule.m in Sources */,
+				8BD0AC503BAB7048831202CA8669766D /* AEAudioThreadEndpoint.m in Sources */,
+				8DE250F40D465ED14847BEC14A130E33 /* AEAudioUnitInputModule.m in Sources */,
+				2FE34E1ECE734CA0AD170DCD92D15F86 /* AEAudioUnitModule.m in Sources */,
+				16A806A72EAAC7902C9D86DBBF8CC482 /* AEAudioUnitOutput.m in Sources */,
+				5624713BA23DD823AEE4FACEB3778AA3 /* AEBandpassModule.m in Sources */,
+				DEF333F5D8978E9B1D0ECAAC4CC673E1 /* AEBufferStack.m in Sources */,
+				E9EAD955C18CA9C121C8B929A6111541 /* AECircularBuffer.m in Sources */,
+				2F8EDD32D3055F2FA36C36418BA0357E /* AEDelayModule.m in Sources */,
+				A5682E8F9778F08493E68211CB6D31CE /* AEDistortionModule.m in Sources */,
+				D5D3B643B41FC53D22C0356D9F57B825 /* AEDSPUtilities.m in Sources */,
+				845983EE6C03DF1BAE4162D7F3417DC8 /* AEDynamicsProcessorModule.m in Sources */,
+				E249155F6A374CE40E329E71D614CD0C /* AEHighPassModule.m in Sources */,
+				3530025DF27F95B8B5D0B5F3BAD0E013 /* AEHighShelfModule.m in Sources */,
+				BDE035E5AFF6ED7CD5AF12AE5DED1E16 /* AEIOAudioUnit.m in Sources */,
+				9A4CAA327B3C1B39D55045BC5562708C /* AELowPassModule.m in Sources */,
+				8471684206F710BAD1B067B85008CFE4 /* AELowShelfModule.m in Sources */,
+				158A47E82A547A32DD737A8343F81390 /* AEMainThreadEndpoint.m in Sources */,
+				8EA65E50AF89AA69C5D9ACC8A267F882 /* AEManagedValue.m in Sources */,
+				42B0622DBC79C14F03E98298CA645697 /* AEMessageQueue.m in Sources */,
+				DE1DE61CD4FBDC49B0E3D65B8B01162B /* AEMixerModule.m in Sources */,
+				A0A7CF24AA88579C8385E9F9F2AA701B /* AEModule.m in Sources */,
+				762B0495E80BCF0DE6934672F363B137 /* AENewTimePitchModule.m in Sources */,
+				361AFF972B011F2CC559C9531F52CCA0 /* AEOscillatorModule.m in Sources */,
+				F45179DF1D391975DB6D2156F52A5250 /* AEParametricEqModule.m in Sources */,
+				BD804006A283B8AA93410E6F38A9D19C /* AEPeakLimiterModule.m in Sources */,
+				EE4FB4A8E321AA290C25506623EB9B60 /* AERealtimeWatchdog.m in Sources */,
+				EFCFA13DD487DC04B7B92C4C134BC182 /* AERenderContext.m in Sources */,
+				A4A48253731F50D6F07C80A997C78CB7 /* AERenderer.m in Sources */,
+				34945A43BEBC34275856A5EC50E026DF /* AEReverbModule.m in Sources */,
+				7A9090B7B1A8DCBDF7AD52FC09179BEE /* AESplitterModule.m in Sources */,
+				DCCD59C2D414844BA8EA5A99E9DABCC0 /* AESubrendererModule.m in Sources */,
+				2A67A0F638F861992E639DFB86DCF387 /* AETime.m in Sources */,
+				C213E3907AE926AFC86E3FE8F9EFCE70 /* AETypes.m in Sources */,
+				745089CFBB6C0E85870584237B742219 /* AEUtilities.m in Sources */,
+				AB26F8F0C7CE45F1DB06BCA89AE07A74 /* AEVarispeedModule.m in Sources */,
+				01CC7DAAEE4547112A7C03F61B5156C5 /* AEWeakRetainingProxy.m in Sources */,
+				7E02E335BA93C8221704301802AACC86 /* TheAmazingAudioEngine-dummy.m in Sources */,
+				385BA4C96A20504685376BDE895B5E76 /* TPCircularBuffer+AudioBufferList.c in Sources */,
+				AC0599045E1D9304C9A527020DA76966 /* TPCircularBuffer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D687D0D99E6BBFF02CCBEEBCD49FB9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98925C8EE2471AF32F71F6CB26E101D /* Pods-STAudioTest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		265AF51EEB986919537AB9F2CC14C30E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TheAmazingAudioEngine;
+			target = AE52A28879BFA0AC340EA8EC5A39FBAA /* TheAmazingAudioEngine */;
+			targetProxy = 7980F322EC84AEAAF29788AA2F04313A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B5663D753F5551CB1446CDE40D1592D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00297AB7AC85278FC3EF304BF3195DD6 /* Pods-STAudioTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C63DD369E7E72EC19E0C2AD959CE427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 610B02931B9F7F0EDB0E160412EEAB24 /* Pods-STAudioTest.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A648B22B6CA41A28E01EABE952EC5404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694F89ED52315D86799C90FC32BCF2BF /* TheAmazingAudioEngine.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TheAmazingAudioEngine/TheAmazingAudioEngine-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TheAmazingAudioEngine;
+				PRODUCT_NAME = TheAmazingAudioEngine;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C41526014BA58034D29A3D5A692D8B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694F89ED52315D86799C90FC32BCF2BF /* TheAmazingAudioEngine.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TheAmazingAudioEngine/TheAmazingAudioEngine-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TheAmazingAudioEngine;
+				PRODUCT_NAME = TheAmazingAudioEngine;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		915C3DAA8198D4EF0060F9EC4DD9A8EF /* Build configuration list for PBXNativeTarget "TheAmazingAudioEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A648B22B6CA41A28E01EABE952EC5404 /* Debug */,
+				C41526014BA58034D29A3D5A692D8B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F7BEB7247922430A91ACA4DCFE3969 /* Build configuration list for PBXNativeTarget "Pods-STAudioTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B5663D753F5551CB1446CDE40D1592D /* Debug */,
+				3C63DD369E7E72EC19E0C2AD959CE427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

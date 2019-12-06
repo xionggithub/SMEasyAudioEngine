@@ -1,0 +1,19 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '9.0'
+
+
+inhibit_all_warnings!
+
+#use_frameworks用于决定使用动态库编译的选项，由于本项目无Swift，为了减少动态库加载耗时，故而关闭该选项
+#use_frameworks!
+
+def common_pods
+    pod 'TheAmazingAudioEngine', git: 'https://phabricator.ushow.media/source/stmaker-amazingaudioengine2.git', :commit => '37c57ae7254846408a3377b0acb8e831da2e33bc'
+end
+
+
+target 'STAudioTest' do
+    
+    common_pods
+end
+

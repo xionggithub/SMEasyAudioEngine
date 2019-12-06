@@ -1,0 +1,10 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '9.0'
+
+inhibit_all_warnings!
+
+target 'testAudioEngine' do
+    pod 'SMEasyAudioEngine', git: 'https://github.com/xionggithub/SMEasyAudioEngine.git', :commit => '489498f7ffb429ba80d97b4dd0b474e2096d84af'
+#    pod 'GPUImage', git: 'https://phabricator.ushow.media/source/starmaker-GPUImage.git', :commit => '6ff673bc3bcbe811153a1afdd6cfe475c8d0d9d9'
+#    pod 'VideoEffect', git: 'https://phabricator.ushow.media/source/client-library/starmaker-VideoEffect.git', :commit => '1131eea1d57a6d15c3794ecaec8a682609c8617a'
+end

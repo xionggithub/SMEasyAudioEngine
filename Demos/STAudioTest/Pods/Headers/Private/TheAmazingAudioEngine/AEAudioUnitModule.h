@@ -1,0 +1,1 @@
+../../../TheAmazingAudioEngine/TheAmazingAudioEngine/Modules/AEAudioUnitModule.h

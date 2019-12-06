@@ -1,0 +1,1 @@
+../../../SMEasyAudioEngine/SMEasyAudioEngine/Core/SMEasyAudioNode.h

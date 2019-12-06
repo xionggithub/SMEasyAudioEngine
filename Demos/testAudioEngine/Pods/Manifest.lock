@@ -1,0 +1,22 @@
+PODS:
+  - SMEasyAudioEngine (1.0)
+
+DEPENDENCIES:
+  - SMEasyAudioEngine (from `https://github.com/xionggithub/SMEasyAudioEngine.git`, commit `489498f7ffb429ba80d97b4dd0b474e2096d84af`)
+
+EXTERNAL SOURCES:
+  SMEasyAudioEngine:
+    :commit: 489498f7ffb429ba80d97b4dd0b474e2096d84af
+    :git: https://github.com/xionggithub/SMEasyAudioEngine.git
+
+CHECKOUT OPTIONS:
+  SMEasyAudioEngine:
+    :commit: 489498f7ffb429ba80d97b4dd0b474e2096d84af
+    :git: https://github.com/xionggithub/SMEasyAudioEngine.git
+
+SPEC CHECKSUMS:
+  SMEasyAudioEngine: bedeb666d1bbee561548b401cd48530a9d680b38
+
+PODFILE CHECKSUM: bf1a27d9e2e6367de8748968fdb76008375fa1a2
+
+COCOAPODS: 1.8.4

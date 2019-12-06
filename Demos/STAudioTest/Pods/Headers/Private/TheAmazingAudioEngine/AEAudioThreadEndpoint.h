@@ -1,0 +1,1 @@
+../../../TheAmazingAudioEngine/TheAmazingAudioEngine/Utilities/AEAudioThreadEndpoint.h

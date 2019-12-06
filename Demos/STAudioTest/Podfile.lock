@@ -1,0 +1,22 @@
+PODS:
+  - TheAmazingAudioEngine (2.0.0)
+
+DEPENDENCIES:
+  - TheAmazingAudioEngine (from `https://phabricator.ushow.media/source/stmaker-amazingaudioengine2.git`, commit `37c57ae7254846408a3377b0acb8e831da2e33bc`)
+
+EXTERNAL SOURCES:
+  TheAmazingAudioEngine:
+    :commit: 37c57ae7254846408a3377b0acb8e831da2e33bc
+    :git: https://phabricator.ushow.media/source/stmaker-amazingaudioengine2.git
+
+CHECKOUT OPTIONS:
+  TheAmazingAudioEngine:
+    :commit: 37c57ae7254846408a3377b0acb8e831da2e33bc
+    :git: https://phabricator.ushow.media/source/stmaker-amazingaudioengine2.git
+
+SPEC CHECKSUMS:
+  TheAmazingAudioEngine: e2c00e9d39322c1238fb32fbdeb01a217ccfb5e6
+
+PODFILE CHECKSUM: 35367b5769e24f1583f5e2c1a9cf4947fb3fdbc8
+
+COCOAPODS: 1.8.4

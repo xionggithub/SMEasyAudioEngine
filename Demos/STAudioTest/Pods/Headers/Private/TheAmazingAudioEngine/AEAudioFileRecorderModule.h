@@ -1,0 +1,1 @@
+../../../TheAmazingAudioEngine/TheAmazingAudioEngine/Modules/Taps/AEAudioFileRecorderModule.h

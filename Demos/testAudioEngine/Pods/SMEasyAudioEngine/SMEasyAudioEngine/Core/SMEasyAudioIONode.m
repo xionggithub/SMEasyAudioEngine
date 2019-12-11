@@ -37,9 +37,7 @@
 }
 
 - (void)resetAudioUnit{
-    [super resetAudioUnit];
-//    AudioUnitUninitialize(self.audioUnit);
-//    AudioUnitInitialize(self.audioUnit);
+    
     AudioUnitReset(self.audioUnit, kAudioUnitScope_Input, inputElement);
     OSStatus status = noErr;
     AudioStreamBasicDescription inputElementOutputStreamFormat = [self outputStreamFormat];

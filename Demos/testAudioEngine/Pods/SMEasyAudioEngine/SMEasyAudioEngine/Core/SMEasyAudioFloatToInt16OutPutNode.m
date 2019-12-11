@@ -69,19 +69,6 @@ const UInt32 SMBufferStackMaxFramesPerSlice = 4096;
 }
 //转换成RLRLRLRL方式输出
 
-- (void)resetAudioUnit{
-    [super resetAudioUnit];
-    AudioStreamBasicDescription outputElementInputStreamFormat = [self inputStreamFormat];
-    AudioStreamBasicDescription outputElementOutputStreamFormat = [self outputStreamFormat];
-    
-    AudioUnitSetProperty(self.audioUnit, kAudioUnitProperty_StreamFormat, kAudioUnitScope_Input, outputElement, &outputElementInputStreamFormat, sizeof(outputElementInputStreamFormat));
-    AudioUnitSetProperty(self.audioUnit, kAudioUnitProperty_StreamFormat, kAudioUnitScope_Output, outputElement, &outputElementOutputStreamFormat, sizeof(outputElementOutputStreamFormat));
-    
-}
-- (void)prepareForRender{
-    [super prepareForRender];
-}
-
 - (void)dealloc{
     SMAudioBufferListFree(_bufferShort);
     _bufferShort = NULL;

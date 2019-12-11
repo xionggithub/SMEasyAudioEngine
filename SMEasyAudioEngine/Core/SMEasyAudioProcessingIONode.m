@@ -36,9 +36,7 @@
 }
 
 - (void)resetAudioUnit{
-    [super resetAudioUnit];
-    //    AudioUnitUninitialize(self.audioUnit);
-    //    AudioUnitInitialize(self.audioUnit);
+   
     AudioUnitReset(self.audioUnit, kAudioUnitScope_Input, inputElement);
     OSStatus status = noErr;
     AudioStreamBasicDescription inputElementOutputStreamFormat = [self outputStreamFormat];
@@ -66,7 +64,5 @@
         AudioUnitSetProperty(self.audioUnit, kAudioUnitProperty_StreamFormat, kAudioUnitScope_Input, outputElement, &outputElementInputStreamFormat, sizeof(outputElementInputStreamFormat));
     }
 }
-- (void)prepareForRender{
-    [super prepareForRender];
-}
+
 @end

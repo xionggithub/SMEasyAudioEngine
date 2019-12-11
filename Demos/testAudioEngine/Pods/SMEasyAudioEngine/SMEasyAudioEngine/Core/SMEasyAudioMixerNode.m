@@ -30,7 +30,7 @@
 
 
 - (void)resetAudioUnit{
-    [super resetAudioUnit];
+    
     UInt32 mixerElementCount1 = 0;
     UInt32 size = sizeof(mixerElementCount1);
     OSStatus status1 = AudioUnitGetProperty(self.audioUnit, kAudioUnitProperty_ElementCount, kAudioUnitScope_Input, 0,
@@ -119,27 +119,5 @@
     }
     AudioUnitParameterValue peakPowerValue = [self getNodeParameterWithInID:kMultiChannelMixerParam_PrePeakHoldLevel inScope:kAudioUnitScope_Input inElement:channel];
     return (CGFloat)peakPowerValue;
-}
-
-- (void)setNodeParameterWithInID:(AudioUnitParameterID)inID
-                         inScope:(AudioUnitScope)inScope
-                       inElement:(AudioUnitElement)inElement
-                         inValue:(AudioUnitParameterValue)inValue
-          inBufferOffsetInFrames:(UInt32)inBufferOffsetInFrames
-{
-    OSStatus status;
-    status = AudioUnitSetParameter(self.audioUnit, inID, inScope, inElement, inValue, inBufferOffsetInFrames);
-    CheckStatus(status, [NSString stringWithFormat:@"set parameter  %d  fail",inID], YES);
-}
-
-- (AudioUnitParameterValue)getNodeParameterWithInID:(AudioUnitParameterID)inID
-                         inScope:(AudioUnitScope)inScope
-                       inElement:(AudioUnitElement)inElement
-{
-    AudioUnitParameterValue value;
-    OSStatus status;
-    status = AudioUnitGetParameter(self.audioUnit, inID, inScope, inElement, &value);
-    CheckStatus(status, [NSString stringWithFormat:@"get parameter  %d  fail",inID], YES);
-    return value;
 }
 @end

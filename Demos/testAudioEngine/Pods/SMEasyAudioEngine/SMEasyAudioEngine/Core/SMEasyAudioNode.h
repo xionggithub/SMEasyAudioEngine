@@ -70,13 +70,123 @@ typedef OSStatus (*SMEasyAudioNodeCustomProcessCallback)(void                   
 
 /**
  IO node 是 inputElement 其他 node 是outputElement
-
+ 
  @param outputStreamFormat 数据格式
-*/
+ */
 - (void)setOutputStreamFormat:(AudioStreamBasicDescription)outputStreamFormat;
 
-
+/**
+重置audiounit
+*/
 - (void)resetAudioUnit;
 
+/**
+渲染前的准备
+*/
 - (void)prepareForRender;
+
+/**
+设置node 的audiounit 的属性
+ inScope   kAudioUnitScope_Global
+ inElement outputElement  (0)
+ 
+ @param inID inID
+ @param inData inData
+ @param inDataSize inDataSize
+*/
+- (BOOL)setNodePropertyWithInID:(AudioUnitPropertyID)inID
+                         inData:(void * _Nonnull)inData
+                     inDataSize:(UInt32)inDataSize;
+
+/**
+获取node 的audiounit 的属性
+ inScope   kAudioUnitScope_Global
+ inElement outputElement  (0)
+ 
+ @param inID inID
+ @param outData outData
+ @param outDataSize  outDataSize
+*/
+- (BOOL)getNodePropertyWithInID:(AudioUnitPropertyID)inID
+                        outData:(void * _Nonnull)outData
+                    outDataSize:(UInt32 * _Nonnull)outDataSize;
+
+/**
+设置node 的audiounit 的属性
+ 
+ @param inID inID
+ @param inScope  inScope
+ @param inElement inElement
+ @param inData inData
+ @param inDataSize outDataSize
+*/
+- (BOOL)setNodePropertyWithInID:(AudioUnitPropertyID)inID
+                        inScope:(AudioUnitScope)inScope
+                      inElement:(AudioUnitElement)inElement
+                         inData:(void * _Nonnull)inData
+                     inDataSize:(UInt32)inDataSize;
+
+/**
+获取node 的audiounit 的属性
+ 
+ @param inID  inID
+ @param inScope  inScope
+ @param inElement inElement
+ @param outData outData
+ @param outDataSize outDataSize
+*/
+- (BOOL)getNodePropertyWithInID:(AudioUnitPropertyID)inID
+                        inScope:(AudioUnitScope)inScope
+                      inElement:(AudioUnitElement)inElement
+                        outData:(void * _Nonnull)outData
+                    outDataSize:(UInt32 * _Nonnull)outDataSize;
+
+
+/**
+ 设置node 的audiounit 的参数
+ inScope   kAudioUnitScope_Global
+ inElement   outputElement  (0)
+ inBufferOffsetInFrames   0
+ 
+ @param inID inID
+ @param inValue  inValue
+*/
+
+- (BOOL)setNodeParameterWithInID:(AudioUnitParameterID)inID
+                         inValue:(AudioUnitParameterValue)inValue;
+
+/**
+获取node 的audiounit 的参数
+ inScope   kAudioUnitScope_Global
+ inElement   outputElement  (0)
+ 
+ @param inID inID
+*/
+- (AudioUnitParameterValue)getNodeParameterWithInID:(AudioUnitParameterID)inID;
+
+/**
+ 设置node 的audiounit 的参数
+ 
+ @param inID inID
+ @param inScope inScope
+ @param inElement inElement
+ @param inValue inValue
+ @param inBufferOffsetInFrames inBufferOffsetInFrames
+*/
+- (BOOL)setNodeParameterWithInID:(AudioUnitParameterID)inID
+                         inScope:(AudioUnitScope)inScope
+                       inElement:(AudioUnitElement)inElement
+                         inValue:(AudioUnitParameterValue)inValue
+          inBufferOffsetInFrames:(UInt32)inBufferOffsetInFrames;
+
+/**
+获取node 的audiounit 的参数
+ 
+ @param inID inID
+ @param inScope inScope
+ @param inElement inElement
+*/
+- (AudioUnitParameterValue)getNodeParameterWithInID:(AudioUnitParameterID)inID
+                                            inScope:(AudioUnitScope)inScope
+                                          inElement:(AudioUnitElement)inElement;
 @end

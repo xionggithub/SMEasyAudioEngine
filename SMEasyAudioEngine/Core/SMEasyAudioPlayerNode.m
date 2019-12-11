@@ -157,9 +157,7 @@ static OSStatus playMusicRenderNotify(void *                            inRefCon
     }
 }
 
-- (void)resetAudioUnit{
-    [super resetAudioUnit];
-    
+- (void)resetAudioUnit{    
     
     OSStatus status = noErr;
 
@@ -175,15 +173,6 @@ static OSStatus playMusicRenderNotify(void *                            inRefCon
                                   );
     CheckStatus(status, @"Could not Set OutputStreamFormat for Player Unit", YES);
     
-//    status = AudioUnitSetProperty(
-//                                  self.audioUnit,
-//                                  kAudioUnitProperty_StreamFormat,
-//                                  kAudioUnitScope_Input,
-//                                  outputElement,
-//                                  &_inputStreamDescription,
-//                                  sizeof (_inputStreamDescription)
-//                                  );
-//    CheckStatus(status, @"Could not Set InputStreamFormat for Player Unit", YES);
 }
 
 - (void)prepareForRender{

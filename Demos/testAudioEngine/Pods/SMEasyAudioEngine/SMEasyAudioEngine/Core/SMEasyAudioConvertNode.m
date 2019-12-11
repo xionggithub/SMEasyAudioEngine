@@ -23,17 +23,4 @@
     }
     return self;
 }
-
-- (void)resetAudioUnit{
-    [super resetAudioUnit];
-    AudioStreamBasicDescription outputElementInputStreamFormat = [self inputStreamFormat];
-    AudioStreamBasicDescription outputElementOutputStreamFormat = [self outputStreamFormat];
-    
-    AudioUnitSetProperty(self.audioUnit, kAudioUnitProperty_StreamFormat, kAudioUnitScope_Input, outputElement, &outputElementInputStreamFormat, sizeof(outputElementInputStreamFormat));
-    AudioUnitSetProperty(self.audioUnit, kAudioUnitProperty_StreamFormat, kAudioUnitScope_Output, outputElement, &outputElementOutputStreamFormat, sizeof(outputElementOutputStreamFormat));
-    
-}
-- (void)prepareForRender{
-    [super prepareForRender];
-}
 @end

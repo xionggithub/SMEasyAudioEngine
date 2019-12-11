@@ -2,21 +2,21 @@ PODS:
   - SMEasyAudioEngine (1.0)
 
 DEPENDENCIES:
-  - SMEasyAudioEngine (from `https://github.com/xionggithub/SMEasyAudioEngine.git`, commit `489498f7ffb429ba80d97b4dd0b474e2096d84af`)
+  - SMEasyAudioEngine (from `https://github.com/xionggithub/SMEasyAudioEngine.git`, commit `4f2dcb37e877c69566b70678ca23c5f8f04e0688`)
 
 EXTERNAL SOURCES:
   SMEasyAudioEngine:
-    :commit: 489498f7ffb429ba80d97b4dd0b474e2096d84af
+    :commit: 4f2dcb37e877c69566b70678ca23c5f8f04e0688
     :git: https://github.com/xionggithub/SMEasyAudioEngine.git
 
 CHECKOUT OPTIONS:
   SMEasyAudioEngine:
-    :commit: 489498f7ffb429ba80d97b4dd0b474e2096d84af
+    :commit: 4f2dcb37e877c69566b70678ca23c5f8f04e0688
     :git: https://github.com/xionggithub/SMEasyAudioEngine.git
 
 SPEC CHECKSUMS:
   SMEasyAudioEngine: bedeb666d1bbee561548b401cd48530a9d680b38
 
-PODFILE CHECKSUM: bf1a27d9e2e6367de8748968fdb76008375fa1a2
+PODFILE CHECKSUM: 2b98bdb579d615f7ac2189695c23b47099c7cf5d
 
 COCOAPODS: 1.8.4

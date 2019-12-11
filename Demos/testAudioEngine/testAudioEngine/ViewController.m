@@ -46,7 +46,7 @@
     
     [self configConvert];
     
-    self.slider.value = [_pitchNode getNewTimePitch];
+    self.slider.value = _pitchNode.pitch;
     NSLog(@"getNewTimePitch %f",self.slider.value);
     self.slider.minimumValue = -2400;
     self.slider.maximumValue = 2400;
@@ -136,7 +136,7 @@
 }
 - (IBAction)sliderValueChanged:(id)sender {
     UISlider *slider = (UISlider *)sender;
-    [_pitchNode setNewTimePitch:slider.value];
+    _pitchNode.pitch = slider.value;
 }
 
 

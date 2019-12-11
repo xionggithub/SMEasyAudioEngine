@@ -19,7 +19,9 @@
 #import <SMEasyAudioEngine/SMEasyAudioConvertNode.h>
 #import <SMEasyAudioEngine/SMEasyAudioSession.h>
 #import <SMEasyAudioEngine/SMEasyAudioConvertNode.h>
+#import <SMEasyAudioEngine/SMEasyAudioNewTimePitchNode.h>
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UISlider *slider;
 
 @end
 
@@ -31,6 +33,7 @@
     SMEasyAudioIONode *_IONode;
     SMEasyAudioMixerNode *_mixNode;
     SMEasyAudioPlayerNode *_playerNode;
+    SMEasyAudioNewTimePitchNode *_pitchNode;
     SMEasyAudioConvertNode *_ffoTofeconvertNode;//44100-48000
     SMEasyAudioConvertNode *_feToffoconvertNode;//48000-44100
 }
@@ -41,7 +44,12 @@
     AVURLAsset *asset = [AVURLAsset assetWithURL:audioURL];
     CMTimeShow(asset.duration);
     
-//    [self configConvert];
+    [self configConvert];
+    
+    self.slider.value = [_pitchNode getNewTimePitch];
+    NSLog(@"getNewTimePitch %f",self.slider.value);
+    self.slider.minimumValue = -2400;
+    self.slider.maximumValue = 2400;
 }
 - (void)configConvert{
     SMEasyAudioEngine *engine = [[SMEasyAudioEngine alloc]init];
@@ -50,6 +58,9 @@
     NSURL *audioURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test3" ofType:@"m4a"]];
     SMEasyAudioPlayerNode *playerNode = [[SMEasyAudioPlayerNode alloc]initWithFile:audioURL];
     _playerNode = playerNode;
+    
+    SMEasyAudioNewTimePitchNode *pitchNode = [[SMEasyAudioNewTimePitchNode alloc]init];
+    _pitchNode = pitchNode;
     
     SMEasyAudioMixerNode *mixNode = [[SMEasyAudioMixerNode alloc] initWithMixerElementCount:2];
     _mixNode = mixNode;
@@ -85,6 +96,7 @@
     
     [engine attachNode:ioNode];
     [engine attachNode:playerNode];
+    [engine attachNode:pitchNode];
     [engine attachNode:mixNode];
     [engine attachNode:feToffoconvertNode];
     [engine attachNode:ffoTofeconvertNode];
@@ -92,7 +104,8 @@
     [engine attachNode:recordNodeOne];
 
     [engine connect:ioNode to:mixNode fromBus:1 toBus:0];
-    [engine connect:playerNode to:mixNode fromBus:0 toBus:1];
+    [engine connect:playerNode to:pitchNode fromBus:0 toBus:0];
+    [engine connect:pitchNode to:mixNode fromBus:0 toBus:1];
     [engine connect:mixNode to:recordNode fromBus:0 toBus:0 modle:SMEasyAudioNodeConnectModleRenderCallBack];
     [engine connect:recordNode to:feToffoconvertNode fromBus:0 toBus:0];
     [engine connect:feToffoconvertNode to:recordNodeOne fromBus:0 toBus:0 modle:SMEasyAudioNodeConnectModleRenderCallBack];
@@ -120,6 +133,10 @@
     [_audioEngine stop];
     [_recordNode finish];
     [_recordNodeOne finish];
+}
+- (IBAction)sliderValueChanged:(id)sender {
+    UISlider *slider = (UISlider *)sender;
+    [_pitchNode setNewTimePitch:slider.value];
 }
 
 

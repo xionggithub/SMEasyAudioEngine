@@ -4,7 +4,7 @@ platform :ios, '9.0'
 inhibit_all_warnings!
 
 target 'testAudioEngine' do
-    pod 'SMEasyAudioEngine', git: 'https://github.com/xionggithub/SMEasyAudioEngine.git', :commit => '4f2dcb37e877c69566b70678ca23c5f8f04e0688'
+    pod 'SMEasyAudioEngine', git: 'https://github.com/xionggithub/SMEasyAudioEngine.git', :commit => '467edac5574ac74a7c96381b8ab0aca790d5f810'
 #    pod 'GPUImage', git: 'https://phabricator.ushow.media/source/starmaker-GPUImage.git', :commit => '6ff673bc3bcbe811153a1afdd6cfe475c8d0d9d9'
 #    pod 'VideoEffect', git: 'https://phabricator.ushow.media/source/client-library/starmaker-VideoEffect.git', :commit => '1131eea1d57a6d15c3794ecaec8a682609c8617a'
 end
